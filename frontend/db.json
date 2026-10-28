@@ -1,0 +1,17 @@
+{
+  "helpers": [
+    { "id": 1, "userId": 11, "name": "Sokha Lim", "experience": "degree", "degrees": ["Nursing diploma"], "availability": "full_time", "district": "Chamkar Mon", "bio": "Elderly care nurse, 6 years." },
+    { "id": 2, "userId": 12, "name": "Dara Chen", "experience": "some", "degrees": [], "availability": "part_time", "district": "Toul Kork", "bio": "Helped with newborn care for two families." },
+    { "id": 3, "userId": 13, "name": "Vanna Sok", "experience": "none", "degrees": [], "availability": "whenever_needed", "district": "Daun Penh", "bio": "Student, free evenings and weekends." },
+    { "id": 4, "userId": 14, "name": "Srey Pov", "experience": "degree", "degrees": ["Physiotherapy BSc"], "availability": "part_time", "district": "Chamkar Mon", "bio": "Mobility support after surgery." }
+  ],
+  "jobs": [
+    { "id": 1, "clientId": 1, "title": "Morning help for my mother", "description": "Meals and medicine reminders.", "timeType": "part_time", "urgency": "urgent", "district": "Toul Kork", "status": "open", "createdAt": "2026-10-20" },
+    { "id": 2, "clientId": 2, "title": "Newborn care at night", "description": "Three nights a week.", "timeType": "part_time", "urgency": "normal", "district": "Daun Penh", "status": "open", "createdAt": "2026-10-22" },
+    { "id": 3, "clientId": 3, "title": "Full-time carer for grandfather", "description": "Wheelchair user, lives with us.", "timeType": "full_time", "urgency": "low", "district": "Chamkar Mon", "status": "open", "createdAt": "2026-10-25" }
+  ],
+  "applications": [
+    { "id": 1, "jobId": 1, "helperId": 2, "status": "pending", "appliedAt": "2026-10-21" }
+  ],
+  "reviews": []
+}
