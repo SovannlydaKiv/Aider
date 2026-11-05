@@ -1,0 +1,250 @@
+/* src/assets/main.css */
+
+/* ── Design tokens ── */
+:root {
+  --color-teal: #1a5c58;
+  --color-teal-light: #e8f4f3;
+  --color-pink: #e879a0;
+  --color-pink-light: #fce9f1;
+  --color-pink-hover: #d4648c;
+  --color-border: #e0e0e0;
+  --color-text: #1a1a1a;
+  --color-text-muted: #6b7280;
+  --color-error: #c0392b;
+  --color-success-bg: #d4edda;
+  --color-success-text: #155724;
+  --radius: 10px;
+}
+
+/* ── Reset / base ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  color: var(--color-text);
+  background: #f9f9f9;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+/* ── Utility classes ── */
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.65rem 1.25rem;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.btn--primary {
+  background: var(--color-pink);
+  color: #fff;
+  border-color: var(--color-pink);
+}
+
+.btn--primary:hover:not(:disabled) {
+  background: var(--color-pink-hover);
+  border-color: var(--color-pink-hover);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--color-teal);
+  border-color: var(--color-teal);
+}
+
+.btn--outline:hover:not(:disabled) {
+  background: var(--color-teal-light);
+}
+
+.btn--danger {
+  color: var(--color-error);
+  border-color: var(--color-error);
+}
+
+.btn--danger:hover:not(:disabled) {
+  background: #fdecea;
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* Avatar */
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-teal-light);
+  color: var(--color-teal);
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.avatar--lg {
+  width: 64px;
+  height: 64px;
+  font-size: 1.3rem;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badge--verified {
+  background: #d1f5e3;
+  color: #1a5c37;
+}
+
+.badge--urgent {
+  background: #fde8e8;
+  color: var(--color-error);
+}
+
+.badge--normal {
+  background: #fef3cd;
+  color: #856404;
+}
+
+.badge--low {
+  background: #e2e3e5;
+  color: #383d41;
+}
+
+/* Chips */
+.chip {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--color-border);
+  background: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: var(--color-text);
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.chip:hover {
+  border-color: var(--color-pink);
+}
+
+.chip--active {
+  border-color: var(--color-pink);
+  background: var(--color-pink-light);
+  font-weight: 700;
+  color: var(--color-teal);
+}
+
+/* Form helpers */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-label {
+  font-weight: 600;
+  color: var(--color-teal);
+  font-size: 0.95rem;
+}
+
+.form-input {
+  padding: 0.75rem 1rem;
+  border: 1.5px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+  background: #fff;
+  width: 100%;
+}
+
+.form-input:focus {
+  border-color: var(--color-pink);
+}
+
+.form-input--error {
+  border-color: var(--color-error);
+}
+
+.form-input--textarea {
+  resize: vertical;
+  min-height: 100px;
+  font-family: inherit;
+}
+
+.form-input--select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%231a5c58' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+  cursor: pointer;
+}
+
+.form-error {
+  color: var(--color-error);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Page layout helpers */
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-teal);
+  margin: 0 0 0.3rem;
+}
+
+.page-sub {
+  color: var(--color-text-muted);
+  margin: 0 0 1.5rem;
+}
+
+.state-msg {
+  color: var(--color-text-muted);
+  padding: 2rem 0;
+  font-size: 1.05rem;
+}
+
+.state-msg--error {
+  color: var(--color-error);
+}
+
+/* Link button */
+.link-btn {
+  background: none;
+  border: none;
+  color: var(--color-teal);
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+}
+
