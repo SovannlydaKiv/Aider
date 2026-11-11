@@ -12,7 +12,7 @@
 ### Explain: Which story did you cut from the MVP, and why?
 I moved Story 2 (showing distance/urgency) and Story 6 (saving jobs to a personal list) into nice-to-have. 
 
-**Why:** The main goal of the MVP is to get the core hiring flow working: a family posts what they need, a helper applies, and the family approves them. Things like calculating distance or bookmarking jobs are convenient, but not essential for someone to find help right now.
+**Why:** The main goal of the MVP is to get the core hiring flow working: a family posts what they need, a helper applies, and the family approves them, therefore i thought that things like calculating distance or bookmarking jobs are convenient, but not essential for someone to find help right now.
 
 ---
 
@@ -28,7 +28,7 @@ I moved Story 2 (showing distance/urgency) and Story 6 (saving jobs to a persona
 ### Explain: What state lives in the store and what stays inside a component? Why?
 
 **In the Pinia store:**
-- **Helpers and Jobs data (`helpers[]`, `jobs[]`) + loading/error status:** Both the list page and detail page need to access this data. Keeping it in the store means I don't have to refetch from the API every time someone clicks back and forth between pages.
+- **Helpers and Jobs data and loading/error status:** Both the list page and detail page need to access this data, so by keeping it in the store means I don't have to refetch from the API every time someone clicks back and forth between pages.
 - **User role (`session.role`):** The router guard checks this before letting users into pages like `/jobs` or `/jobs/new`. Since router guards run outside components, this has to be in the store.
 
 **Inside the component:**
