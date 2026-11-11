@@ -24,11 +24,11 @@ These days, families struggle to find the time between their job and taking care
 
 ## MVP scope
 **Must have**:
-* Filter helpers by time commitment and experience requirements
-* Create a new job posting using a simple interface
+* Filter helpers by time requirements and experience requirements
+* Create a new job posting with a simple UI
 * Create the profile of a helper
 * View helper profiles
-* Leave a rating for a helper after job completion
+* Leave a rating for a helper after they finish the job
 * Approve or decline helper applications
 * Admin content moderation and user management
 
