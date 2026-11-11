@@ -1,4 +1,4 @@
-# Component trees
+# Component tree
 
 ## Helper list (HelperListPage)
 Owns: search, availability, experience (via useHelperFilters). Reads helpers store.

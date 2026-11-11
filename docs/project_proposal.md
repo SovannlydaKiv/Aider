@@ -26,7 +26,7 @@ These days, families struggle to find the time between their job and taking care
 **Must have**:
 * Filter helpers by time commitment and experience requirements
 * Create a new job posting using a simple interface
-* Helper profile creation (experience level and degrees)
+* Create the profile of a helper
 * View helper profiles
 * Leave a rating for a helper after job completion
 * Approve or decline helper applications
